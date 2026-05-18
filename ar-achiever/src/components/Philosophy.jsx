@@ -29,7 +29,7 @@ export default function Philosophy() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActivePhilosophy((prev) => (prev + 1) % philosophies.length);
-    }, 4000);
+    }, 6000);
     return () => clearInterval(interval);
   }, [philosophies.length]);
 
@@ -53,9 +53,6 @@ export default function Philosophy() {
             className={`absolute inset-0 bg-[#f4eee3] p-8 border border-[#e8dfd3] shadow-md flex flex-col justify-between text-left transition-all duration-700 ease-in-out transform ${position}`}
           >
             <div className="space-y-4">
-              <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-amber-700 font-bold block">
-                Studio Philosophy // 0{index + 1}
-              </span>
               <h3 className="text-xl font-serif font-normal text-[#1a1512] tracking-wide leading-snug">
                 {item.title}
               </h3>
@@ -65,7 +62,7 @@ export default function Philosophy() {
             </div>
             
             <div className="flex items-center justify-between border-t border-[#e8dfd3]/60 pt-3">
-              <span className="text-xs font-mono text-[#a39485]">— {item.author}</span>
+              <span className="text-sm font-mono text-[#a39485]">— {item.author}</span>
               <div className="flex space-x-1.5">
                 {philosophies.map((_, dotIdx) => (
                   <span 
