@@ -15,9 +15,9 @@ export default function Philosophy() {
       author: "B.V. Doshi"
     },
     {
-      title: "Truth to Materials",
-      quote: "A concrete block, steel beam, or timber column should be celebrated, not hidden.",
-      author: "Brutalist Axiom"
+      title: "Less is More",
+      quote: "Minimalism isn't the lack of something. It's simply the perfect amount of it.",
+      author: "Mies van der Rohe"
     },
     {
       title: "The Architecture of Time",

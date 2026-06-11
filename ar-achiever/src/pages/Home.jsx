@@ -1,7 +1,7 @@
 import React from 'react';
 import Philosophy from '../components/Philosophy';
 
-export default function Home() {
+export default function Homepage() {
   const services = [
     {
       id: "01",
